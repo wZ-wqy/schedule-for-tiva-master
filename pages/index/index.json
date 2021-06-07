@@ -1,0 +1,7 @@
+{
+	"usingComponents": {
+		"calendar": "../../components/calendar/index"
+	},
+	"backgroundColorTop": "#f4645f",
+	"backgroundColorBottom": "#fafafa"
+}

@@ -1,0 +1,82 @@
+page {
+    background: #fafafa;
+}
+
+.top-area {
+    height: 130rpx;
+    width: 100%;
+    background: #f4645f;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.user-avatar {
+    width: 150rpx;
+    height: 150rpx;
+    background: gainsboro;
+    border: 3rpx rgb(238, 238, 238) solid;
+    border-radius: 50%;
+    box-shadow: 3rpx 3rpx 10rpx 0 rgb(211, 211, 211);
+    margin: 0 auto;
+    margin-top: 50rpx;
+    overflow: hidden;
+}
+
+.user-avatar image {
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.user-nickname {
+    color: #414141;
+    text-align: center;
+    width: 300rpx;
+    margin: 0 auto;
+    margin-top: 20rpx;
+    font-size: 30rpx;
+}
+
+.operations {
+    background: white;
+    border-radius: 30rpx;
+    padding: 50rpx 0;
+    margin: 60rpx 30rpx 0 30rpx;
+    box-shadow: 0rpx 2rpx 30rpx 0 rgb(211, 211, 211);
+}
+
+.operations .operation-title {
+    font-size: 26rpx;
+    color: rgb(155, 155, 155);
+    padding: 10rpx 30rpx;
+}
+
+.operations .notfirst-operation-title {
+    margin-top: 20rpx;
+}
+
+.operations .operation {
+    height: 85rpx;
+    padding: 0 60rpx;
+    position: relative;
+}
+
+.operations .operation:active {
+    background: #fafafa;
+}
+
+.operations .operation view {
+    font-size: 26rpx;
+    color: #414141;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120rpx;
+    line-height: 85rpx;
+}
+
+.operations .operation image {
+    height: 100%;
+    width: 40rpx;
+    margin-right: 25rpx;
+}

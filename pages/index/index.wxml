@@ -1,0 +1,33 @@
+<view class="page-container">
+    <!-- 成功提示 -->
+    <view class="success-message" animation="{{animations.successMessage}}">{{successMessage}}</view>
+
+    <!-- 顶部红色背景 -->
+    <view class="top-area"></view>
+
+    <!-- 日历区 -->
+    <view class="canlendar-container">
+        <calendar calendar="{{calendar}}" gesture="{{gesture}}"></calendar>
+    </view>
+
+    <!-- 按钮/输入框区 -->
+    <input class="input" wx:if="{{showInput}}" bindconfirm="confirmInput" placeholder=' ✏️ 好记性不如烂笔头 赶紧记下来 (ง •̀_•́)ง' animation="{{animations.input}}"></input>
+    <view class="button" bindtap="showInput" hidden="{{showInput}}" animation="{{animations.addBtn}}">+</view>
+
+    <!-- 待办区 -->
+    <view class="todolist-container" animation="{{animations.todolist}}">
+        <view class="todolist-item todolist-title">💡 这天的事务</view>
+        <view class="todolist-item" wx:for="{{displayAreaTodolist}}" wx:key="{{index}}">
+            <movable-area>
+                <movable-view x="{{item.x}}" direction="horizontal" out-of-bounds="true" inertia="true">
+                    {{index + 1}}. {{item}}
+                </movable-view>
+            </movable-area>
+            <view class="delete-btn" data-index="{{index}}" bindtap="tapDelete">删除</view>
+        </view>
+        <view class="todolist-item no-todolist" hidden="{{displayAreaTodolist.length !== 0}}">🍃 悠闲的一天～</view>
+    </view>
+
+    <!-- 底部间距 -->
+    <view class="bottom-area"></view>
+</view>

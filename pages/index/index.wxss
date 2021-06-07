@@ -1,0 +1,125 @@
+.canlendar-container {
+    width: 665rpx;
+    margin: 25rpx auto;
+    padding: 10rpx 15rpx 30rpx 15rpx;
+    border-radius: 30rpx;
+    box-shadow: 0rpx 2rpx 30rpx 0 rgb(211, 211, 211);
+    background: #fff;
+}
+
+.button {
+    background: #64b5f6;
+    border-radius: 50%;
+    width: 80rpx;
+    height: 80rpx;
+    color: white;
+    margin: 30rpx auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70rpx;
+    font-size: 50rpx;
+    padding: 0;
+    box-shadow: 3rpx 3rpx 10rpx 0 rgb(211, 211, 211);
+}
+
+.input {
+    width: 0rpx; /* 初始宽度设为0，因为展示的时候会执行一个过渡动画，宽度过渡到500rpx */
+    margin: 42rpx auto;
+    border-bottom: 4rpx solid #64b5f6;
+    padding: 0 20rpx;
+    font-size: 26rpx;
+    height: 57rpx;
+}
+
+.todolist-container {
+    width: 693rpx;
+    margin: 35rpx auto;
+    border-radius: 20rpx;
+    box-shadow: 0rpx 2rpx 30rpx 0 rgb(211, 211, 211);
+    padding: 20rpx 0;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.todolist-container .todolist-item {
+    height: 70rpx;
+    position: relative;
+    font-size: 26rpx;
+    line-height: 70rpx;
+}
+
+.todolist-container .todolist-title {
+    padding: 0 20rpx;
+    color: rgb(155, 155, 155);
+    height: 50rpx;
+    line-height: 30rpx;
+}
+
+.todolist-container .no-todolist {
+    color: rgb(155, 155, 155);
+    text-align: center;
+}
+
+.todolist-container .todolist-item .delete-btn {
+    height: 100%;
+    background: #f4645f;
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 26rpx;
+    text-align: right;
+    padding-right: 28rpx;
+    color: #fff;
+    line-height: 70rpx;
+}
+
+.todolist-container .todolist-item movable-area {
+    width: 85%;
+    height: 100%;
+}
+
+.todolist-container .todolist-item movable-area movable-view {
+    background: #fff;
+    width: 653rpx;
+    height: 100%;
+    z-index: 1;
+    padding: 0 20rpx;
+}
+
+page {
+    background: #fafafa;
+}
+
+.page-container {
+    position: relative;
+}
+
+.top-area {
+    height: 130rpx;
+    width: 100%;
+    background: #f4645f;
+    position: absolute;
+    top: -25rpx;
+    z-index: -1;
+}
+
+.bottom-area {
+    height: 100rpx;
+}
+
+.success-message {
+    background: #69d19b;
+    border-radius: 30rpx;
+    display: inline-block;
+    position: absolute;
+    top: -110rpx; /* 提示落下时值为20rpx */
+    right: 24%;
+    left: 24%;
+    font-size: 28rpx;
+    height: 60rpx;
+    text-align: center;
+    color: #fff;
+    line-height: 60rpx;
+    box-shadow: 3rpx 3rpx 10rpx 0 rgb(211, 211, 211);
+}

@@ -1,0 +1,55 @@
+page {
+    background: #fafafa;
+}
+
+.top-area {
+    height: 130rpx;
+    width: 100%;
+    background: #f4645f;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.page-title {
+    /* background: gray; */
+    color: white;
+    font-size: 50rpx;
+    text-align: center;
+    line-height: 90rpx;
+}
+
+.content-container {
+    position: relative;
+    top: 40rpx;
+    font-size: 26rpx;
+    color: #414141;
+    padding: 0 70rpx;
+}
+
+.content-title {
+    padding-top: 50rpx;
+    font-size: 30rpx;
+    color: rgb(155, 155, 155);
+}
+
+.content {
+    padding: 15rpx 0;
+}
+
+.version {
+    padding: 20rpx 0 8rpx 0;
+    font-size: 24rpx;
+    color: rgb(165, 165, 165);
+}
+
+.first-version {
+    padding-top: 0;
+}
+
+.version text {
+    font-weight: 500;
+    font-size: 26rpx;
+    color: #414141;
+    padding-right: 10rpx;
+}

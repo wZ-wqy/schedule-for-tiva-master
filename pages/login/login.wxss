@@ -1,0 +1,9 @@
+button {
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 30rpx;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    right: 20%;
+}

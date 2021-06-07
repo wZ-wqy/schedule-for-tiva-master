@@ -1,0 +1,37 @@
+<view>
+    <view class="top-area"></view>
+    <view class="page-title">Tiva 的安排</view>
+    <view class='content-container'>
+        <view class="content-title">关于</view>
+        <view class='content'>
+            为 Tiva 量身定制的每日事务管理微信小程序，当然，也适用于每个可爱又忙碌的人
+        </view>
+        <view class="content-title">版本</view>
+        <view class='content'>
+            <view class='version first-version'>
+                <text>Version 1.1.0</text> 2019年5月19日</view>
+            <view class='version-content'>
+                <view>· 新增个人页，支持微信登录以使用数据迁移功能</view>
+                <view>· 优化页面上下拖动时背景色断层的问题</view>
+                <view>· 增加彩蛋</view>
+            </view>
+            <view class='version'>
+                <text>Version 1.0.0</text> 2019年5月15日</view>
+            <view class='version-content'>
+                · 首次发布
+            </view>
+        </view>
+        <view class="content-title">ROADMAP</view>
+        <view class='content'>
+            <view>· 增加每日早晨事项提醒功能</view>
+            <view>· 增加奖励制度，增加水果收集成就的分享功能</view>
+            <view>· 优化体验</view>
+        </view>
+        <view class="content-title">开发者</view>
+        <view class='content'>
+            <view>👨🏻‍💻 @xvrzhao ( Github · Twitter · Gmail )</view>
+            <view>❤️ JavaScript / Node.js / Laravel / React</view>
+            <view>💡 OpenSource: xvrzhao/schedule-for-tiva</view>
+        </view>
+    </view>
+</view>

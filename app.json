@@ -1,0 +1,34 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/me/me",
+		"pages/about/about",
+		"pages/login/login"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#f4645f",
+		"navigationBarTitleText": "事务",
+		"navigationBarTextStyle": "white"
+	},
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"color": "#9e9e9e",
+		"selectedColor": "#4fc08d",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "事务",
+				"iconPath": "icons/index.png",
+				"selectedIconPath": "icons/index_selected.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我",
+				"iconPath": "icons/me.png",
+				"selectedIconPath": "icons/me_selected.png"
+			}
+		]
+	}
+}

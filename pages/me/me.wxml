@@ -1,0 +1,34 @@
+<view>
+    <view class="top-area"></view>
+    <view class="user-avatar">
+        <open-data type='userAvatarUrl' wx:if="{{isLogin}}"></open-data>
+        <image wx:else src='../../images/default_avatar.jpeg' mode='aspectFill'></image>
+    </view>
+    <view class="user-nickname" bindtap='tapLogin'>
+        <open-data type="userNickName" wx:if="{{isLogin}}"></open-data>
+        <text wx:else>登录/注册</text>
+    </view>
+    <view class="operations">
+        <view class="operation-title">迁移</view>
+        <view class="operation" bindtap='tapUpload'>
+            <image src='../../icons/upload.png' mode="aspectFit"></image>
+            <view>备份到云</view>
+        </view>
+        <view class="operation" bindtap='tapDownload'>
+            <image src='../../icons/download.png' mode="aspectFit"></image>
+            <view>从云恢复</view>
+        </view>
+        <view class="operation-title notfirst-operation-title">应用</view>
+        <view class="operation" bindtap='tapAbout'>
+            <image src='../../icons/about.png' mode="aspectFit"></image>
+            <view>关于</view>
+        </view>
+        <view wx:if="{{isLogin}}">
+            <view class="operation-title notfirst-operation-title">用户</view>
+            <view class="operation" bindtap='tapExit'>
+                <image src='../../icons/exit.png' mode="aspectFit"></image>
+                <view>退出登录</view>
+            </view>
+        </view>
+    </view>
+</view>
